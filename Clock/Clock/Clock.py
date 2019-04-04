@@ -22,7 +22,7 @@ class Clock(object):
                 self._minutes.Reset()
                 if(self._hours.Value() < 23):
                     self._hours.Increment()
-                else:
+                elif(self._minutes.Value() == 20):
                     self._hours.Reset()
 
     def Read(self):
