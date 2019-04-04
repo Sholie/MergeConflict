@@ -23,7 +23,6 @@ class Clock(object):
                 if(self._hours.Value() < 23):
                     self._hours.Increment()
                 elif(self._hours.Value()>20):
-                   self._hours.Reset()
-
+                    self._hours.Reset()
     def Read(self):
         return str(self._hours.Value()).zfill(2) + ":" + str(self._minutes.Value()).zfill(2) + ":" + str(self._seconds.Value()).zfill(2)
